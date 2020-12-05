@@ -4,7 +4,7 @@ import com.example.robustatask.model.ProductResponse
 import retrofit2.http.GET
 
 interface Api {
-    @GET("https://movie-database-imdb-alternative.p.rapidapi.com/?s=Avengers%20Endgame&page=1&r=json")
+    @GET("https://api.themoviedb.org/3/movie/550/lists?api_key=2caf1c01467b1e15fd0b4ae9c1b6a152&language=en-US&page=1")
     suspend fun getProductList(): ProductResponse
 
 }
