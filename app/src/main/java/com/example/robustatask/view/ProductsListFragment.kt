@@ -1,6 +1,5 @@
 package com.example.robustatask.view
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -48,7 +47,6 @@ class ProductsListFragment : Fragment() {
   private   fun getViewModel() = SearchViewModel::class.java
 
 
-    @SuppressLint("RestrictedApi")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -80,7 +78,6 @@ class ProductsListFragment : Fragment() {
 
         btnUp.setOnClickListener{
             recyclerView.smoothScrollToPosition(0)
-            btnUp.visibility = View.GONE
         }
         return view
     }
