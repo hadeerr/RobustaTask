@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RobustaTask</string>
+    <string name="hint_query">Write your pproduct</string>
+</resources>
